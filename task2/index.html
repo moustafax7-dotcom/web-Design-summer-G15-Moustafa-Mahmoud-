@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+
+        <div>
+            <label>First Name:</label>
+            <input type="text" id="userFirstName" name="firstName">
+        </div>
+
+        <div>
+            <label>Last Name:</label>
+            <input type="text" id="userLastName" name="lastName">
+        </div>
+
+        <div>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vel.</h2>
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="userEmail">
+        </div>
+
+        <div>
+            <label>Shipping Area</label>
+            <input type="text" name="shipping" value="Alex" readonly>
+            <input type="text" name="shippingArea" value="Alex" readonly>
+        </div>
+
+        <div>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="0"> <label>Male</label>
+            <input type="radio" name="gender" value="1"> <label>Female</label>
+        </div>
+
+        <div>
+            <label>Courses</label>
+            <input type="checkbox" name="courses[]" value="html"> <label>Html</label>
+            <input type="checkbox" name="courses[]" value="css"> <label>Css</label>
+            <input type="checkbox" name="courses[]" value="js"> <label>Js</label>
+            <input type="checkbox" name="courses[]" value="bootstrap" checked> <label>Bootstrap</label>
+        </div>
+
+        <div>
+            <label>Age</label>
+            <input type="number" name="userAge" min="8" max="18">
+        </div>
+
+        <div>
+            <select name="track">
+                <option value="10" disabled selected>please choose your track</option>
+                <option value="0">Frontend</option>
+                <option value="1">Backend</option>
+                <option value="2">Network</option>
+                <option value="3">Mobile</option>
+            </select>
+
+            <select name="track" multiple>
+                <option value="10" disabled selected>please choose your track</option>
+                <option value="0">Frontend</option>
+                <option value="1">Backend</option>
+                <option value="2">Network</option>
+                <option value="3">Mobile</option>
+            </select>
+        </div>
+
+        <input type="file" name="userFile" multiple>
+        <br>
+
+        <div>
+            <label for="website">Homepage</label>
+            <input type="url" id="website" name="website" pattern="https?://.+" title="Include http://">
+        </div>
+
+        <div>
+            <label>ID</label>
+            <input type="text" minlength="10" maxlength="14">
+        </div>
+
+        <fieldset>
+            <legend>Search</legend>
+            <label>Search:</label>
+            <input list="searchOptions" name="search">
+            <datalist id="searchOptions">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Bootstrap">
+            </datalist>
+        </fieldset>
+
+        <div>
+            <label>Profile Image</label>
+            <input type="file" name="userImage" accept=".png">
+        </div>
+
+        <div>
+            <label>Mobile Number</label>
+            <input type="text" name="userMobile" pattern="(010|011|012|015)[0-9]{8}" maxlength="11" title="Mobile must be 11 digits and start with 010/011/012/015">
+        </div>
+
+        <input type="submit" value="login">
+        <button type="submit">Register</button>
+
+        <input type="reset" value="clear Data">
+        <button type="reset">Clear Info</button>
+
+    </form>
+</body>
+</html>
