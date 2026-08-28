@@ -1,0 +1,12 @@
+.position-absolute{
+    display: none;
+}
+.position-relative:hover .position-absolute{
+    display: block;
+    .d-flex-none{
+        display: none;
+    }
+}
+.navbar{
+        background-image: url(../images/hero.png);
+}
