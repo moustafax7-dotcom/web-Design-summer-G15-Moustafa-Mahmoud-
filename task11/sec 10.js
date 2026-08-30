@@ -28,3 +28,35 @@ else {
         alert("Failed");
     }
 }
+
+
+ // Task2//
+
+function myLoop(start, end, skip, stop) {
+
+    if (
+        start !== undefined &&
+        end !== undefined &&
+        skip !== undefined &&
+        stop !== undefined
+    ) {
+
+        for (let i = start; i <= end; i++) {
+
+            if (i === skip) {
+                continue;
+            }
+
+            if (i === stop) {
+                break;
+            }
+
+            console.log(i);
+        }
+
+    } else {
+        alert("Please enter all numbers");
+    }
+}
+
+myLoop(1, 10, 3, 8);
